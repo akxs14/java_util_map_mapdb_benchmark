@@ -1,5 +1,8 @@
 run:
-	java -cp target/map_bench-1.0.jar de.motionlogic.map_bench.App
+	java -jar target/map_bench-1.0-jar-with-dependencies.jar
 
 build:
-	mvn clean dependency:copy-dependencies package
+	mvn clean package
+
+rebuild:
+	make build run
